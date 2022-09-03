@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/reset.css">
+    <script src="https://kit.fontawesome.com/acf9a5f092.js" crossorigin="anonymous"></script>
+    <title>Encriptador</title>
+</head>
+
+<body>
+
+    <main>
+        <br>
+        <br>
+        <br>
+        </section>
+        <section class="sectionMensaje">
+            <div class="mensajeIzquierda">
+                <div class="divLogoAlura">
+                    <img class='imgLogo' src="/img/Logo.png">
+                </div>
+                <div class="divIngresarMensaje">
+                    <div class="divAreaMensaje">
+                        <textarea class="AreaMensaje" name="mensaje" spellcheck="false" placeholder="Ingrese texto aqui"></textarea>
+                    </div>
+                </div>
+                <div class="divBtnEncriptarDesencriptar">
+                    <div class="divBtns">
+                        <div class="divBtnAcomodar">
+                            <div class="msjMayAcentos">
+                                <div class="divContenidoMsjMayAcentos">
+                                    <i class="fa-solid fa-circle-exclamation" id="iconoSigno"></i>
+                                    <label id="labelAcentos" class="labelMayAcentos">Solo letras minúsculas y sin acentos </label>
+                                </div>
+                            </div>
+                            <div class="divDosBtns">
+                                <div class="divBtn" id="divBtnAzul">
+                                    <button class="btn" id="btnEncriptar" type="button">Encriptar</button>
+                                </div>
+                                <div class="divBtn" id="divBtnTransparante">
+                                    <button class="btn" id="btnDesencriptar" type="button">Desencriptar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mensajeDerecha">
+                <div class="divContenido">
+                    <div class="divTextoEncriptadoDesencriptado">
+                        <div class="divAreaEncriptado">
+                            <textarea class="AreaEncriptado" name="mensaje" spellcheck="false" readonly></textarea>
+                        </div>
+                    </div>
+                    <div class="divGifTexto">
+                        <div class="divGif">
+                            <img class="microGif" src="/img/Muñeco.png">
+                        </div>
+                        <div class="msjNoEncontrado">
+                            <div class="divLabelNoEncontrado">
+                                <label class="labelMensaje">No se a Encontrado <br> ningun texto</label>
+                            </div>
+                            <div class="divLabelIngresarTexto">
+                                <label class="labelIngresarTexto">Ingrese el texto que desees encriptar o <br> desencriptar</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divMensajeContenido">
+                        <div class="btnBlanco">
+                            <button class="btn" id="btnCopiar" type="button">Copiar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div>
+                <a href="https://github.com/Diegobarriaolivo"><img src="/img/icons8-github-30.png" alt="github"></a>
+                <a href="https://www.linkedin.com/in/diego-barria-olivo/?originalSubdomain=cl"><img src="/img/icons8-linkedin-rodeado-de-círculo-30.png" alt="linkedin"></a>
+                <a href="https://www.instagram.com/diego__23_/"><img src="/img/icons8-instagram-30.png" alt="instagram"></a>
+                <H3>Trabajo realizado por Diego Barria Olivo</H3>
+            </div>
+
+        </footer>
+    </main>
+
+    <script src="/js/encriptador.js"></script>
+
+</body>
+
+</html>

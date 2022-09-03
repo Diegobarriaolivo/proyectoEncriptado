@@ -1,0 +1,449 @@
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: #dfdde6;
+    }
+    
+    #navBarDerecha {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 70%;
+    }
+    
+    .divHipervinculos {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .sectionTitulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4vh;
+        color: #356EA9;
+        margin-bottom: 3vh;
+    }
+    
+    #titulo {
+        font-size: 2.2rem;
+    }
+    
+    .sectionMensaje {
+        display: flex;
+        height: calc(100vh - 25vh);
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .mensajeIzquierda {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 100%;
+    }
+    
+    .divLogoAlura {
+        width: calc(100% - 3rem);
+        height: 2%;
+        padding-left: 1rem;
+    }
+    
+    .divIngresarMensaje {
+        width: 100%;
+        height: calc(70% - 3rem);
+        margin: 0 auto;
+        padding-top: 3rem;
+    }
+    
+    .divAreaMensaje {
+        width: 60%;
+        height: 85%;
+        margin: 0 auto;
+    }
+    
+    .AreaMensaje {
+        width: calc(100% - 4px);
+        height: 110%;
+        background-color: #d2d3da;
+        border: none;
+        resize: none;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #9eb8a4;
+        text-align: justify;
+    }
+    
+    .AreaMensaje:focus {
+        outline: 0 none;
+    }
+    
+    .AreaMensaje::placeholder {
+        color: #356EA9;
+        font-size: 1.6rem;
+    }
+    
+    .divBtnEncriptarDesencriptar {
+        width: 100%;
+        height: 20%;
+    }
+    
+    .divBtns {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    
+    .divBtnAcomodar {
+        position: absolute;
+        width: 100%;
+        bottom: 1.5rem;
+    }
+    
+    .divDosBtns {
+        display: flex;
+    }
+    
+    .divBtn {
+        width: 50%;
+        height: 6vh;
+    }
+    
+    .msjMayAcentos {
+        margin-bottom: 0.5rem;
+    }
+    
+    .mensajeDerecha {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 100%;
+    }
+    
+    .divContenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+        height: calc(100% - 2rem);
+        background-color: white;
+        padding-top: 2rem;
+        border-radius: 5%;
+        -webkit-box-shadow: 0px 0px 15px -2px rgba(5, 32, 81, 1);
+        -moz-box-shadow: 0px 0px 15px -2px rgba(5, 32, 81, 1);
+        box-shadow: 0px 0px 15px -2px rgba(5, 32, 81, 1);
+    }
+    
+    .divTextoEncriptadoDesencriptado {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 80%;
+        display: none;
+    }
+    
+    .divAreaEncriptado {
+        width: 85%;
+        height: 90%;
+    }
+    
+    .AreaEncriptado {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(235, 235, 235);
+        border: none;
+        resize: none;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #33cf2e;
+    }
+    
+    .AreaEncriptado:focus {
+        outline: 0 none;
+    }
+    
+    .AreaEncriptado::placeholder {
+        color: #0f6fe3;
+        font-size: 1.6rem;
+    }
+    
+    .divGifTexto {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .divGif {
+        display: flex;
+        width: 80%;
+        height: 75%;
+        border-radius: 10%;
+        -webkit-box-shadow: 0px 0px 15px -2px rgb(3, 17, 42);
+        -moz-box-shadow: 0px 0px 15px -2px rgba(5, 32, 81, 1);
+        box-shadow: 0px 0px 15px -2px rgba(5, 32, 81, 1);
+        margin-bottom: 2.5rem;
+    }
+    
+    .microGif {
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+    }
+    
+    .msjNoEncontrado {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .divMensajeContenido {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 20%;
+    }
+    
+    .divLabelNoEncontrado {
+        margin-bottom: 1rem;
+    }
+    
+    .labelMensaje {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    .labelIngresarTexto {
+        font-weight: lighter;
+        color: #16025c;
+    }
+    
+    .divContenidoMsjMayAcentos {
+        display: flex;
+        align-items: center;
+    }
+    
+    #iconoSigno {
+        margin-right: 0.5rem;
+    }
+    
+    .labelMayAcentos {
+        font-size: 1rem;
+        color: #0f1501;
+    }
+    
+    .labelMayAcentosRojos {
+        font-size: 1.15rem;
+        color: rgba(232, 7, 7, 0.829);
+    }
+    
+    #btnEncriptar {
+        background-color: #072B61;
+        color: rgb(242, 239, 239);
+        border-color: #0A3871;
+        font-weight: bold;
+    }
+    
+    #btnDesencriptar {
+        border: 1px solid #0A3871;
+        background-color: transparent;
+        color: #0A3871;
+        font-weight: bold;
+    }
+    
+    #btnCopiar {
+        border: 1px solid #0A3871;
+        background-color: transparent;
+        color: #0A3871;
+        font-weight: bold;
+    }
+    
+    .btn {
+        border-radius: 25px;
+        width: 96%;
+        height: 6vh;
+        border: none;
+    }
+    
+    .btnBlanco {
+        position: absolute;
+        width: 80%;
+        height: 6vh;
+        bottom: 1.5rem;
+    }
+    
+    #btnCopiar {
+        width: 100%;
+    }
+    
+    @media screen and (min-width: 451px) and (max-width: 768px) {
+        .divHipervinculos {
+            display: none;
+        }
+        #titulo {
+            font-size: 1rem;
+        }
+        .labelMensaje {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .labelIngresarTexto {
+            font-size: 0.85rem;
+        }
+        .divMenu {
+            display: block;
+            transform: scale(1.5);
+        }
+        #navBarIzquierda {
+            justify-content: center;
+        }
+        #LogoOracleAlura {
+            width: 12vh;
+        }
+        #navBarDerecha {
+            width: 50%;
+            justify-content: center;
+        }
+        #navBarIzquierda {
+            width: 50%;
+        }
+        .sectionMensaje {
+            flex-direction: column;
+        }
+        .mensajeIzquierda {
+            width: 100%;
+            height: 70%;
+        }
+        .mensajeDerecha {
+            width: 100%;
+            height: 30%;
+        }
+        .divGif {
+            display: none;
+        }
+        .divContenido {
+            width: 100%;
+        }
+        .divIngresarMensaje {
+            width: 100%;
+            height: calc(70% - 1.5rem);
+            padding-top: 1.5rem;
+            /* border: 1px solid red; */
+        }
+        .divLogoAlura {
+            width: 100%;
+            padding: 0;
+            /* border: 1px solid black; */
+        }
+        .imgLogo {
+            height: 100%;
+        }
+        .divAreaMensaje {
+            width: 100%;
+            height: 85%;
+        }
+        .AreaMensaje::placeholder {
+            color: #356EA9;
+            font-size: 1.2rem;
+        }
+        .divBtns {
+            width: 100%;
+            height: 100%;
+        }
+        .divBtn {
+            height: 4vh;
+        }
+        .divBtnAcomodar {
+            position: absolute;
+            width: 100%;
+            bottom: 1.5rem;
+        }
+        .divGifTexto {
+            height: 100%;
+        }
+        br {
+            display: none;
+        }
+        .divContenido {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+        }
+        .msjNoEncontrado {
+            width: 100%;
+            height: 100%;
+        }
+        .divTextoEncriptadoDesencriptado {
+            height: calc(75% - 1rem);
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+        .divMensajeContenido {
+            display: none;
+            width: 100%;
+            height: 25%;
+        }
+        .btnBlanco {
+            position: absolute;
+            width: 85%;
+            height: 4vh;
+            top: 0rem;
+        }
+        .btn {
+            height: 4vh;
+            border: none;
+        }
+        .AreaEncriptado {
+            font-size: 0.95rem;
+        }
+        .AreaMensaje {
+            font-size: 1.15rem;
+        }
+        .sectionMensaje2 {
+            display: flex;
+            height: 100vh;
+        }
+        main {
+            margin-bottom: 1rem;
+        }
+        #navBarIzquierda {
+            width: 50%;
+        }
+        .divHipervinculos {
+            display: none;
+        }
+        .divMenu {
+            display: block;
+            transform: scale(1.5);
+        }
+        #titulo {
+            font-size: 0.9rem;
+        }
+        .sectionMensaje {
+            display: flex;
+            flex-direction: column;
+        }
+        .mensajeIzquierda {
+            width: 100%;
+            height: 70%;
+        }
+        .mensajeDerecha {
+            width: 100%;
+            height: 30%;
+        }
+        .divLogoAlura {
+            width: 100%;
+            padding: 0;
+            /* border: 1px solid black; */
+        }
+        .imgLogo {
+            height: 70%;
+        }
+    }
